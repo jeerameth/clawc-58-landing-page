@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026年 第58屆世界鍾靈校友嘉年華會 | 58th World Chung Ling Alumni Carnival</title>
+    <meta name="description"
+        content="Join the 58th World Chung Ling Alumni Carnival 2026 in Singapore - October 29 - November 1, 2026 at Montigo Resort, Nongsa​pura.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'carnival-blue': '#003DA5',
+                        'carnival-gold': '#FFB800',
+                        'carnival-light': '#f8f9fa',
+                    },
+                    fontFamily: {
+                        'chinese': ['Noto Sans SC', 'sans-serif'],
+                        'english': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/additional.css">
+    <link rel="stylesheet" href="styles/logo.css">
+    <link rel="stylesheet" href="styles/light-theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav
+        class="fixed top-0 left-0 w-full py-4 z-50 bg-white/98 backdrop-blur-md border-b border-carnival-blue/10 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <img src="assets/logo.png" alt="58th CLAWC Logo" class="h-12 w-auto">
+                <span class="text-lg font-bold text-gray-800">58th CLAWC 2026</span>
+            </div>
+            <ul class="hidden md:flex gap-8 items-center">
+                <li><a href="#home" class="text-sm font-medium hover:text-carnival-blue transition-colors">首頁 Home</a>
+                </li>
+                <li><a href="#about" class="text-sm font-medium hover:text-carnival-blue transition-colors">關於 About</a>
+                </li>
+                <li><a href="#venue" class="text-sm font-medium hover:text-carnival-blue transition-colors">場地 Venue</a>
+                </li>
+                <li><a href="#activities" class="text-sm font-medium hover:text-carnival-blue transition-colors">活動
+                        Activities</a></li>
+                <li><a href="#packages" class="text-sm font-medium hover:text-carnival-blue transition-colors">配套
+                        Packages</a></li>
+                <li><a href="#register"
+                        class="px-5 py-2 bg-gradient-to-r from-carnival-gold to-orange-500 text-white rounded-full font-bold text-sm hover:scale-105 transition-transform">報名
+                        Register</a></li>
+            </ul>
+            <button class="md:hidden text-2xl text-carnival-blue">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative h-screen flex items-center justify-center pt-24 md:pt-4 overflow-hidden">
+        <!-- Parallax Background Image (Fixed) -->
+        <div class="parallax-bg absolute inset-0 z-0" style="background-image: url('assets/hero-bg.jpg'); 
+                    background-size: cover; 
+                    background-position: center; 
+                    background-attachment: fixed;"></div>
+
+        <!-- Dark Blue Overlay for Text Readability -->
+        <div class="absolute inset-0 z-0 bg-carnival-blue/80"></div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-0 text-center">
+
+            <!-- Organizer Badge -->
+            <div
+                class="inline-block px-6 py-2 bg-gradient-to-r from-carnival-gold to-orange-500 rounded-full mb-6 shadow-lg">
+                <span class="text-sm font-semibold text-gray-900">鍾靈中學(新加坡)校友會承辦</span>
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="font-bold text-white mb-4 leading-tight px-4"
+                style="font-size: clamp(2.5rem, 10vw, 3.5rem); white-space: nowrap;">
+                2026年 第58屆<br>
+                <span class="text-carnival-gold"
+                    style="font-size: clamp(2rem, 7vw, 3.5rem); white-space: nowrap;">世界鍾靈校友嘉年華會</span>
+            </h1>
+
+            <!-- Subtitles -->
+            <p class="text-2xl text-carnival-gold mb-2 font-chinese font-semibold">推介禮暨說明會</p>
+            <p class="text-lg text-gray-200 mb-8 font-english italic">58th World Chung Ling Alumni Carnival</p>
+
+            <!-- Event Details -->
+            <div class="flex flex-col sm:flex-row gap-3 justify-center mb-8 max-w-4xl mx-auto">
+                <div
+                    class="inline-flex items-center gap-2 text-sm text-white px-5 py-2.5 bg-white/15 rounded-full backdrop-blur-sm">
+                    <i class="fas fa-calendar-alt text-carnival-gold"></i>
+                    <span>2026年 10月29日 (星期四) 至 11月1日 (星期日)</span>
+                </div>
+                <div
+                    class="inline-flex items-center gap-2 text-sm text-white px-5 py-2.5 bg-white/15 rounded-full backdrop-blur-sm">
+                    <i class="fas fa-map-marker-alt text-carnival-gold"></i>
+                    <span>Montigo Resort, Batam | Singapore</span>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap gap-6 justify-center items-center">
+                <a href="#register"
+                    class="px-10 py-3.5 bg-gradient-to-r from-carnival-gold to-orange-500 text-gray-900 rounded-full font-bold text-sm uppercase tracking-wide hover:-translate-y-1 hover:shadow-2xl transition-all shadow-lg">
+                    立即報名 REGISTER NOW
+                </a>
+                <a href="#about"
+                    class="px-10 py-3.5 bg-white/10 backdrop-blur-sm border-2 border-white text-white rounded-full font-bold text-sm uppercase tracking-wide hover:bg-white hover:text-carnival-blue transition-all hidden md:block">
+                    了解更多 LEARN MORE
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-4 text-3xl text-carnival-gold animate-bounce-slow">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>世界鍾靈校友嘉年華會簡介</h2>
+                <p class="subtitle-en">About the World Chung Ling Alumni Carnival</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-main">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-globe-asia"></i>
+                        </div>
+                        <h3>全球性聯誼活動</h3>
+                        <p>世界鍾靈校友嘉年華會乃是鍾靈校友的世界性聯誼活動，由馬來西亞鍾靈校友會聯合總會負責監督。</p>
+                        <p class="text-en">A global networking event for Chung Ling alumni, supervised by the Malaysian
+                            Chung Ling Alumni Association Federation.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>促進交流與團結</h3>
+                        <p>它以體育比賽、聯歡、學術交流和觀光等形式，把世界各地的校友齊聚一堂，旨在共敘同窗情誼，加強聯繫，互勉共策，使愛吾鍾靈之風發揚光大。</p>
+                        <p class="text-en">Through sports, social activities, academic exchanges, and sightseeing,
+                            bringing alumni together to strengthen bonds and celebrate Chung Ling spirit.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>馬來西亞紀錄大全</h3>
+                        <p>值得一提的是，世界鍾靈校友嘉年華會於2001年12月通過中馬友會的協助申請，以"校友會舉辦常年嘉年華會持續最久記錄"列入《馬來西亞記錄大全》。</p>
+                        <p class="text-en">Recognized in the Malaysia Book of Records (2001) for the longest-running
+                            annual alumni carnival (33 years: 1969-2001).</p>
+                    </div>
+                </div>
+
+                <div class="history-section">
+                    <h3>嘉年華的歷史和起源</h3>
+                    <p>鍾靈校友世界嘉年華是一項凝聚全球鍾靈校友的重要盛會，源於校友們對母校深厚情感與共同價值的傳承。自創辦以來，嘉年華以聯絡世界各地鍾靈校友為宗旨，搭建跨地區、跨世代的交流平台，延續鍾靈"自強不息、追求卓越"的精神。
+                    </p>
+                    <p>隨著時代的發展，鍾靈校友世界嘉年華的規模與影響力不斷擴大，主辦城市遍及不同國家與地區。每一屆嘉年華不僅是校友情誼的重聚，更融合了文化交流、教育分享、社會責任與青年培育等多元內容，展現鍾靈校友在全球各領域的杰出成就。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Badge Design Section -->
+    <section class="badge-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>徽章設計理念</h2>
+                <p class="subtitle-en">World Carnival Logo - Design Concept</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="badge-intro">
+                <p>鍾靈中學(新加坡)校友會乃第58屆世界鍾靈校友嘉年華會的承辦單位。嘉年華會的徽章由新加坡三個最具代表性的元素組成，它們是：鱼尾狮、卓錦萬代蘭、及擎天樹。徽章的正中央為鍾靈校鐘。</p>
+                <p class="text-en">The carnival logo consists of three of Singapore's most iconic symbols: the Merlion,
+                    the Vanda Miss Joaquim orchid, and the Supertree. At the very centre stands the Chung Ling school
+                    bell.</p>
+            </div>
+
+            <div class="badge-symbols">
+                <div class="symbol-card">
+                    <div class="symbol-icon">🦁</div>
+                    <h3>鱼尾狮 The Merlion</h3>
+                    <p>作為新加坡的城市象徵，寓意勇氣、智慧與力量；也承載著先輩南來謀生、跨海求存的集體記憶。其精神內涵與鍾靈中學十大信條所倡導的價值遙相呼應—以自律立身，以卓越為志，追求臻於至善的人生境界。</p>
+                    <p class="text-en">Singapore's emblematic icon, signifying courage, wisdom, and strength. It
+                        resonates with the values advocated by The Commandments of Chung Ling - discipline, excellence,
+                        and the pursuit of a life of utmost virtue.</p>
+                </div>
+
+                <div class="symbol-card">
+                    <div class="symbol-icon">🌺</div>
+                    <h3>卓錦萬代蘭 Vanda Miss Joaquim</h3>
+                    <p>乃是新加坡的國花，象徵著卓越錦繡、萬代不朽；更代表了新加坡多元文化和堅毅不屈的精神。鍾靈校友自母校出發，在世界各地落地生根，奮發成長；多元發展、百花齊放而又和諧共生。</p>
+                    <p class="text-en">Singapore's national flower, represents enduring excellence and timeless beauty.
+                        It embodies Singapore's multicultural harmony and resilient spirit, mirroring the achievements
+                        of alumni in all walks of life.</p>
+                </div>
+
+                <div class="symbol-card">
+                    <div class="symbol-icon">🌳</div>
+                    <h3>擎天樹 The Supertree</h3>
+                    <p>高聳入雲，枝葉相連、光影交織，象徵全球鍾靈校友網絡的支撐與連結。多元而和諧，各展所長，共同成就輝煌；高瞻遠矚的姿態，則寓意鍾靈人胸懷遠志，照亮人生與未來。</p>
+                    <p class="text-en">Soars into the sky, its branches inter-connected - a symbol of the global Chung
+                        Ling alumni network's support and connection. Its towering presence signifies the visionary
+                        spirit of Chung Ling alumni.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Section -->
+    <section id="venue" class="venue-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>場地介紹</h2>
+                <p class="subtitle-en">Venue: Montigo Resort, Nongsa​pura</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="venue-content">
+                <div class="venue-description">
+                    <h3>Montigo Resort Nongsa​pura</h3>
+                    <p>2025 Winner of Indonesia Best Luxury Family Resort</p>
+                    <p>A sprawling 12-hectare resort featuring a private beach and elegant hilltop and sea-facing
+                        villas—each with its own private pool.</p>
+
+                    <h4>如何前往 Nongsa​pura Island (Batam)</h4>
+                    <div class="transport-options">
+                        <div class="transport-card">
+                            <h5><i class="fas fa-ship"></i> From Singapore</h5>
+                            <p><strong>Tanah Merah Terminal:</strong> 30 mins ferry ride to Nongsa​pura, then 5 mins to
+                                Montigo Resort.</p>
+                            <p><strong>Harbour Front Terminal:</strong> 1 hour to Batam Centre Terminal & 45 mins coach
+                                to Montigo Resorts.</p>
+                        </div>
+                        <div class="transport-card">
+                            <h5><i class="fas fa-ship"></i> From Malaysia</h5>
+                            <p><strong>Johor Bahru:</strong> Stulang Laut/Berjaya Waterfront Ferry Terminal to Batam
+                                Centre (1.5 hours), then 45 mins coach to Montigo Resort.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="villa-options">
+                    <h3>Villa & Room Distribution</h3>
+
+                    <!-- Villa Carousel -->
+                    <div class="villa-carousel-wrapper">
+                        <button class="carousel-btn carousel-prev" aria-label="Previous villa">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+
+                        <div class="villa-carousel">
+                            <div class="villa-card">
+                                <h4>1-Bedroom Villa</h4>
+                                <p class="price">S$ 220 <span>/night</span></p>
+                                <ul>
+                                    <li>96 sqm with king/twin bed</li>
+                                    <li>Max: 2 persons + 1 child</li>
+                                    <li>Private pool</li>
+                                    <li>35 units available</li>
+                                </ul>
+                            </div>
+                            <div class="villa-card">
+                                <h4>2-Bedroom Villa</h4>
+                                <p class="price">S$ 350 <span>/night</span></p>
+                                <ul>
+                                    <li>147 sqm 3-story villa</li>
+                                    <li>Max: 4 persons + 1 extra bed</li>
+                                    <li>Infinity pool & sky terrace</li>
+                                    <li>88 units available</li>
+                                </ul>
+                            </div>
+                            <div class="villa-card">
+                                <h4>3-Bedroom Villa</h4>
+                                <p class="price">S$ 950 <span>/night</span></p>
+                                <ul>
+                                    <li>650 sqm with jacuzzi</li>
+                                    <li>Max: 6 persons + 1 extra bed</li>
+                                    <li>Private lawn & BBQ area</li>
+                                    <li>10 units available</li>
+                                </ul>
+                            </div>
+                            <div class="villa-card">
+                                <h4>5-Bedroom Villa</h4>
+                                <p class="price">S$ 1,600 <span>/night</span></p>
+                                <ul>
+                                    <li>1952 sqm lavish residence</li>
+                                    <li>Max: 10 persons + 1 extra bed</li>
+                                    <li>Hilltop or Seafront options</li>
+                                    <li>2 units available</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <button class="carousel-btn carousel-next" aria-label="Next villa">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Carousel Indicators -->
+                    <div class="carousel-indicators">
+                        <button class="indicator active" data-index="0" aria-label="Villa 1"></button>
+                        <button class="indicator" data-index="1" aria-label="Villa 2"></button>
+                        <button class="indicator" data-index="2" aria-label="Villa 3"></button>
+                        <button class="indicator" data-index="3" aria-label="Villa 4"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>主要活動與項目</h2>
+                <p class="subtitle-en">Major Activities and Programs</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="schedule-timeline">
+                <div class="timeline-day">
+                    <div class="day-header">
+                        <h3>Thursday, 29 Oct 2026</h3>
+                        <p class="chinese">星期四</p>
+                    </div>
+                    <div class="day-activities">
+                        <div class="activity-item">
+                            <i class="fas fa-golf-ball"></i>
+                            <div>
+                                <h4>Golf Competition & Leisure</h4>
+                                <p>Palm Springs Golf and Country Club</p>
+                                <p class="price">Registration: S$160 (18-hole, buggy, caddy, lunch, prizes)</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-utensils"></i>
+                            <div>
+                                <h4>開放給各屆校友同學會訂座晚餐 (自費)</h4>
+                                <p>Class Reunion Dinners (1970, 1988, 1989 graduates)</p>
+                                <p>15% friendship discount</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-day">
+                    <div class="day-header">
+                        <h3>Friday, 30 Oct 2026</h3>
+                        <p class="chinese">星期五</p>
+                    </div>
+                    <div class="day-activities">
+                        <div class="activity-item">
+                            <i class="fas fa-water"></i>
+                            <div>
+                                <h4>早上: 半日游/水上活動</h4>
+                                <p>Morning: Half-day tour / Water sports</p>
+                            </div>
+                        </div>
+                        <div class="activity-item highlight">
+                            <i class="fas fa-ribbon"></i>
+                            <div>
+                                <h4>晚上: 嘉年華會開幕典禮</h4>
+                                <p>Evening: Opening Ceremony</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-music"></i>
+                            <div>
+                                <h4>Midnight Party @ 10:30 PM</h4>
+                                <p>Glasshouse @ Sandpark - DJ Music, Free Bintang Beer/Drinks, Dancing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-day">
+                    <div class="day-header">
+                        <h3>Saturday, 31 Oct 2026</h3>
+                        <p class="chinese">星期六</p>
+                    </div>
+                    <div class="day-activities">
+                        <div class="activity-item">
+                            <i class="fas fa-swimmer"></i>
+                            <div>
+                                <h4>早上: 半日游/水上活動</h4>
+                                <p>Morning: Half-day tour / Water sports</p>
+                            </div>
+                        </div>
+                        <div class="activity-item highlight">
+                            <i class="fas fa-glass-cheers"></i>
+                            <div>
+                                <h4>晚上: 閉幕晚宴/聯歡活動</h4>
+                                <p>Evening: Closing Ceremony / Gala Dinner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-day">
+                    <div class="day-header">
+                        <h3>Sunday, 1 Nov 2026</h3>
+                        <p class="chinese">星期日</p>
+                    </div>
+                    <div class="day-activities">
+                        <div class="activity-item">
+                            <i class="fas fa-city"></i>
+                            <div>
+                                <h4>離開度假村，新加坡半日游</h4>
+                                <p>Depart Resort, Half-day Singapore Tour</p>
+                                <p>Options: City Highlights or Cultural & Heritage Tour</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resort Activities -->
+            <div class="resort-activities">
+                <h3>Resort Recreation & Activities</h3>
+                <div class="activities-grid">
+                    <div class="activity-category">
+                        <h4><i class="fas fa-water"></i> Watersports</h4>
+                        <ul>
+                            <li>Jetski</li>
+                            <li>Kayaking</li>
+                            <li>Banana Boat</li>
+                            <li>Paddle Board</li>
+                            <li>Parasailing</li>
+                            <li>Fishing Trip</li>
+                        </ul>
+                    </div>
+                    <div class="activity-category">
+                        <h4><i class="fas fa-running"></i> Landsports</h4>
+                        <ul>
+                            <li>Dirt Track ATV</li>
+                            <li>Tennis</li>
+                            <li>Bike Tour</li>
+                            <li>Motocross</li>
+                        </ul>
+                    </div>
+                    <div class="activity-category">
+                        <h4><i class="fas fa-palette"></i> Other Activities</h4>
+                        <ul>
+                            <li>Archery</li>
+                            <li>Batik Painting</li>
+                            <li>Mangrove Tour</li>
+                            <li>Yoga</li>
+                            <li>VR Games</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="discount-note">*15% off for activities except water sports and ATV</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>嘉年華會配套</h2>
+                <p class="subtitle-en">Carnival Packages</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="main-package">
+                <div class="package-highlight">
+                    <h3>Early Bird Special Carnival Ticket</h3>
+                    <div class="package-price">
+                        <span class="price-sgd">S$ 299</span>
+                        <span class="or">or</span>
+                        <span class="price-myr">RM 980</span>
+                        <span class="per-pax">per pax</span>
+                    </div>
+                    <div class="package-includes">
+                        <h4>Package Includes:</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Opening and Closing Dinners</li>
+                            <li><i class="fas fa-check"></i> Goodie Bag</li>
+                            <li><i class="fas fa-check"></i> Batik Shirt</li>
+                            <li><i class="fas fa-check"></i> 15% discounts on all resort restaurants and activities</li>
+                        </ul>
+                    </div>
+                    <p class="package-note">First come first booking on your preferred Villa (1, 2, 3, 4, 5 room) with
+                        attractive pricing for CLHS alumni only.</p>
+                </div>
+            </div>
+
+            <!-- Sponsorship Packages -->
+            <div class="sponsorship-section">
+                <h3>Sponsorship Packages</h3>
+                <div class="sponsorship-tables">
+                    <div class="sponsor-table">
+                        <h4>Singapore Dollar (SGD) Packages</h4>
+                        <table>
+                            <tr>
+                                <th>Tier</th>
+                                <th>Benefits</th>
+                            </tr>
+                            <tr>
+                                <td>SGD 5,000</td>
+                                <td>1 Complimentary Ticket, Appreciation Plaque, VIP Immigration lane, Free VIP
+                                    transport, VIP check-in</td>
+                            </tr>
+                            <tr>
+                                <td>SGD 10,000 - 19,999</td>
+                                <td>2 Complimentary Tickets, 3 nights accommodation (1 Bedded), Appreciation Plaque, VIP
+                                    benefits</td>
+                            </tr>
+                            <tr>
+                                <td>SGD 20,000 - 29,999</td>
+                                <td>4 Complimentary Tickets, 3 nights accommodation (2 Bedded), Appreciation Plaque, VIP
+                                    benefits, Ribbon-cutting</td>
+                            </tr>
+                            <tr>
+                                <td>SGD 30,000+</td>
+                                <td>6 Complimentary Tickets, 3 nights accommodation (3 Bedded), Appreciation Plaque, VIP
+                                    benefits, Ribbon-cutting</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="sponsor-table">
+                        <h4>Ringgit Malaysia (MYR) Packages</h4>
+                        <table>
+                            <tr>
+                                <th>Tier</th>
+                                <th>Benefits</th>
+                            </tr>
+                            <tr>
+                                <td>MYR 5,000</td>
+                                <td>1 Complimentary Ticket, Appreciation Plaque, VIP benefits</td>
+                            </tr>
+                            <tr>
+                                <td>MYR 10,000 - 19,999</td>
+                                <td>2 Complimentary Tickets, 1 night accommodation (1 Bedded), Appreciation Plaque, VIP
+                                    benefits</td>
+                            </tr>
+                            <tr>
+                                <td>MYR 20,000 - 29,999</td>
+                                <td>2 Complimentary Tickets, 1 night accommodation (1 Bedded), Appreciation Plaque, VIP
+                                    benefits, Ribbon-cutting</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="cta-section">
+        <div class="container text-center">
+            <h2>加入我們的盛會</h2>
+            <p class="subtitle-en">Join Our Celebration</p>
+            <p class="cta-description">2026年第58屆世界鍾靈校友嘉年華會期待您的參與</p>
+            <p class="cta-description-en">The 58th World Chung Ling Alumni Carnival awaits you</p>
+
+            <div class="registration-info">
+                <h3>官方報名注冊平台</h3>
+                <p class="website-link">
+                    <a href="http://www.claworldcarnival.com" target="_blank">www.claworldcarnival.com</a>
+                </p>
+            </div>
+
+            <div class="payment-methods">
+                <h3>Payment Methods</h3>
+                <div class="payment-grid">
+                    <div class="payment-card">
+                        <h4><i class="fas fa-flag"></i> Singapore</h4>
+                        <p><strong>Chung Ling High School Alumni (Singapore) Association</strong></p>
+                        <p>Bank: UOB Bank</p>
+                        <p>Account No: 9103432380</p>
+                        <p>Paynow UEN: S66SS0009E</p>
+                    </div>
+                    <div class="payment-card">
+                        <h4><i class="fas fa-flag"></i> Malaysia</h4>
+                        <p><strong>Persekutuan Alumni Chung Ling Malaysia</strong></p>
+                        <p>Bank: RHB Bank</p>
+                        <p>Account No: 2070 7300 0377 08</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="http://www.claworldcarnival.com" target="_blank" class="btn btn-primary btn-large">
+                    <i class="fas fa-user-plus"></i> 立即報名 Register Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <h3>第58屆世界鍾靈校友嘉年華會</h3>
+                    <p>58th World Chung Ling Alumni Carnival</p>
+                    <p class="footer-year">2026年 10月29日 - 11月1日</p>
+                    <p class="footer-location">Montigo Resort, Nongsa​pura, Batam</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速連結 Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">關於 About</a></li>
+                        <li><a href="#venue">場地 Venue</a></li>
+                        <li><a href="#activities">活動 Activities</a></li>
+                        <li><a href="#packages">配套 Packages</a></li>
+                        <li><a href="http://www.claworldcarnival.com" target="_blank">報名 Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>聯繫我們 Contact Us</h4>
+                    <p>Official Website:</p>
+                    <p><a href="http://www.claworldcarnival.com">www.claworldcarnival.com</a></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-wechat"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 World Chung Ling Alumni Carnival. All Rights Reserved.</p>
+                <p>世界鍾靈校友嘉年華會 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>

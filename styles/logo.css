@@ -1,0 +1,64 @@
+/* Logo Specific Styles */
+
+/* Navigation Logo */
+nav img {
+    height: 3rem;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease;
+}
+
+nav img:hover {
+    transform: scale(1.05);
+}
+
+/* Hero Logo */
+header img {
+    height: 8rem;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+    animation: fadeUp 1s ease-out;
+}
+
+/* Logo Container Adjustments */
+.flex.items-center.gap-4 img {
+    display: block;
+}
+
+/* Ensure clean rendering */
+img {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+/* Remove any background artifacts */
+nav img,
+header img {
+    background: transparent;
+    mix-blend-mode: normal;
+}
+
+/* Responsive Logo Sizing */
+@media (max-width: 768px) {
+    nav img {
+        height: 2.5rem;
+    }
+
+    header img {
+        height: 6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav img {
+        height: 2rem;
+    }
+
+    header img {
+        height: 5rem;
+    }
+}

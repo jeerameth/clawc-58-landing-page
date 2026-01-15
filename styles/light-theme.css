@@ -1,0 +1,140 @@
+/* Light Theme Enhancements and Overrides */
+
+/* Enhanced Navigation */
+nav {
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Ensure Day Headers Have White Text */
+.day-header,
+.day-header h3,
+.day-header p,
+.day-header .chinese {
+    color: white !important;
+}
+
+/* Light Background Sections */
+.about-section,
+.venue-section,
+.packages-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%);
+}
+
+.badge-section,
+.activities-section {
+    background: white;
+}
+
+/* Enhanced Card Shadows for Light Theme */
+.about-card,
+.symbol-card,
+.villa-card,
+.transport-card,
+.sponsor-table,
+.payment-card {
+    box-shadow: 0 2px 8px rgba(0, 61, 165, 0.08);
+}
+
+.about-card:hover,
+.villa-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 61, 165, 0.15);
+}
+
+/* Timeline Day Cards */
+.timeline-day {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Activity Items */
+.activity-item {
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.activity-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 61, 165, 0.12);
+}
+
+/* Table Enhancements */
+table {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+table tr:hover {
+    background: #f8f9fa;
+}
+
+/* Button Enhancements */
+.btn-primary {
+    box-shadow: 0 4px 12px rgba(255, 184, 0, 0.3);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 6px 20px rgba(255, 184, 0, 0.5);
+}
+
+/* Text Contrast Improvements */
+body {
+    color: #2c3e50;
+}
+
+p,
+li {
+    color: #555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--carnival-blue);
+}
+
+/* Border Refinements */
+.about-card,
+.symbol-card,
+.villa-card {
+    border: 1px solid rgba(0, 61, 165, 0.1);
+}
+
+.villa-card.featured {
+    border: 2px solid var(--carnival-gold);
+}
+
+/* Package Highlight */
+.package-highlight {
+    box-shadow: 0 8px 24px rgba(255, 184, 0, 0.15);
+}
+
+/* Footer Gradient */
+footer {
+    background: linear-gradient(135deg, #003DA5 0%, #002a75 100%);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus States for Accessibility */
+a:focus,
+button:focus {
+    outline: 2px solid var(--carnival-gold);
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    nav {
+        position: static;
+    }
+
+    .cta-buttons,
+    .social-links {
+        display: none;
+    }
+}

@@ -1,0 +1,749 @@
+/* Main Styles for 58th World Chung Ling Alumni Carnival */
+
+/* Root Variables */
+:root {
+    --carnival-blue: #003DA5;
+    --carnival-gold: #FFB800;
+    --carnival-light: #f8f9fa;
+    --text-dark: #2c3e50;
+    --text-gray: #666;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Section Styles */
+section {
+    padding: 5rem 0;
+}
+
+.section-header {
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--carnival-blue);
+    margin-bottom: 0.5rem;
+}
+
+.subtitle-en {
+    font-size: 1.25rem;
+    color: var(--text-gray);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, var(--carnival-gold), #ff8c00);
+    margin: 1.5rem auto;
+    border-radius: 2px;
+}
+
+/* About Section */
+.about-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.about-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.about-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 61, 165, 0.2);
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: var(--carnival-gold);
+    margin-bottom: 1rem;
+}
+
+.about-card h3 {
+    font-size: 1.5rem;
+    color: var(--carnival-blue);
+    margin-bottom: 1rem;
+}
+
+.about-card p {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+}
+
+.text-en {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+.history-section {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--carnival-gold);
+}
+
+.history-section h3 {
+    font-size: 1.75rem;
+    color: var(--carnival-blue);
+    margin-bottom: 1.5rem;
+}
+
+.history-section p {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* Badge Section */
+.badge-section {
+    background: white;
+}
+
+.badge-intro {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.badge-intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+}
+
+.badge-symbols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.symbol-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.symbol-card:hover {
+    border-color: var(--carnival-gold);
+    box-shadow: 0 8px 20px rgba(255, 184, 0, 0.15);
+}
+
+.symbol-icon {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.symbol-card h3 {
+    font-size: 1.5rem;
+    color: var(--carnival-blue);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.symbol-card p {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+}
+
+/* Venue Section */
+.venue-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.venue-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.venue-description h3 {
+    font-size: 2rem;
+    color: var(--carnival-blue);
+    margin-bottom: 1rem;
+}
+
+.venue-description h4 {
+    font-size: 1.5rem;
+    color: var(--carnival-blue);
+    margin: 2rem 0 1rem;
+}
+
+.venue-description p {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.transport-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.transport-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--carnival-gold);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transport-card h5 {
+    font-size: 1.25rem;
+    color: var(--carnival-blue);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.transport-card p {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+.transport-card strong {
+    color: var(--carnival-blue);
+}
+
+/* Villa Options */
+.villa-options h3 {
+    font-size: 2rem;
+    color: var(--carnival-blue);
+    margin-bottom: 2rem;
+}
+
+/* Villa Carousel */
+.villa-carousel-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+    overflow: hidden;
+}
+
+.villa-carousel {
+    display: flex;
+    overflow: visible;
+    scroll-behavior: smooth;
+    transition: transform 0.5s ease-in-out;
+    gap: 2rem;
+}
+
+.villa-carousel .villa-card {
+    min-width: calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+    flex: 0 0 calc(50% - 1rem);
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+/* Carousel Navigation Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--carnival-gold);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-btn:hover {
+    background: var(--carnival-blue);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--carnival-gold);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.indicator.active {
+    background: var(--carnival-gold);
+    transform: scale(1.2);
+}
+
+.indicator:hover {
+    background: var(--carnival-blue);
+    border-color: var(--carnival-blue);
+}
+
+/* Villa Card Styles */
+.villa-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+
+.villa-card h4 {
+    font-size: 1.5rem;
+    color: var(--carnival-blue);
+    margin-bottom: 1rem;
+}
+
+.villa-card .price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--carnival-gold);
+    margin-bottom: 1.5rem;
+}
+
+.villa-card .price span {
+    font-size: 1rem;
+    color: var(--text-gray);
+    font-weight: 400;
+}
+
+.villa-card ul {
+    list-style: none;
+}
+
+.villa-card ul li {
+    padding: 0.5rem 0;
+    color: var(--text-gray);
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.villa-card ul li:last-child {
+    border-bottom: none;
+}
+
+/* Activities Section */
+.activities-section {
+    background: white;
+}
+
+.schedule-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.timeline-day {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.day-header {
+    background: linear-gradient(135deg, var(--carnival-blue) 0%, #0052cc 100%);
+    padding: 1.5rem 2rem;
+    color: white;
+}
+
+.day-header h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+    color: white;
+}
+
+.day-header .chinese {
+    font-size: 1rem;
+    opacity: 0.9;
+    color: white;
+}
+
+.day-activities {
+    padding: 2rem;
+}
+
+.activity-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--carnival-gold);
+    transition: all 0.3s ease;
+}
+
+.activity-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateX(5px);
+}
+
+.activity-item.highlight {
+    border-left-color: var(--carnival-blue);
+    background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+}
+
+.activity-item i {
+    font-size: 2rem;
+    color: var(--carnival-gold);
+    min-width: 2rem;
+}
+
+.activity-item h4 {
+    font-size: 1.25rem;
+    color: var(--carnival-blue);
+    margin-bottom: 0.5rem;
+}
+
+.activity-item p {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 0.25rem;
+}
+
+.activity-item .price {
+    color: var(--carnival-gold);
+    font-weight: 600;
+}
+
+/* Resort Activities */
+.resort-activities {
+    margin-top: 3rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 2.5rem;
+    border-radius: 12px;
+}
+
+.resort-activities h3 {
+    font-size: 2rem;
+    color: var(--carnival-blue);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.activity-category {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity-category h4 {
+    font-size: 1.25rem;
+    color: var(--carnival-blue);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.activity-category ul {
+    list-style: none;
+}
+
+.activity-category ul li {
+    padding: 0.5rem 0;
+    color: var(--text-gray);
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.activity-category ul li:last-child {
+    border-bottom: none;
+}
+
+.discount-note {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: var(--carnival-gold);
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th {
+    background: var(--carnival-blue);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    color: var(--text-gray);
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:hover {
+    background: #f8f9fa;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, var(--carnival-blue) 0%, #002a75 100%);
+    color: white;
+    padding: 3rem 0 1.5rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.footer-logo p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5rem;
+}
+
+.footer-year {
+    color: var(--carnival-gold) !important;
+    font-weight: 600;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: var(--carnival-gold);
+}
+
+.footer-contact p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5rem;
+}
+
+.footer-contact a {
+    color: var(--carnival-gold);
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--carnival-gold);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 0.25rem;
+}
+
+/* Animations */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-slow {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-fadeUp {
+    animation: fadeUp 1s ease-out;
+}
+
+.animate-bounce-slow {
+    animation: bounce-slow 2s ease-in-out infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .about-main,
+    .badge-symbols,
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Carousel mobile adjustments */
+    .villa-carousel-wrapper {
+        padding: 0 40px;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .carousel-indicators {
+        margin-top: 1.5rem;
+    }
+
+    /* Show 1 card on mobile */
+    .villa-carousel {
+        gap: 0;
+    }
+
+    .villa-carousel .villa-card {
+        min-width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}

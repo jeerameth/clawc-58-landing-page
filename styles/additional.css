@@ -1,0 +1,357 @@
+/* Additional Styles for Packages, Pricing, and Special Components */
+
+/* Parallax Effect - Fixed Background */
+.parallax-bg {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Mobile fallback - iOS doesn't support background-attachment: fixed well */
+@media (max-width: 768px) {
+    .parallax-bg {
+        background-attachment: scroll;
+        /* On mobile, we use a static background for better performance */
+    }
+}
+
+/* Packages Section */
+.packages-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.main-package {
+    max-width: 900px;
+    margin: 0 auto 4rem;
+}
+
+.package-highlight {
+    background: linear-gradient(135deg, #ffffff 0%, #fffbf0 100%);
+    border: 3px solid var(--carnival-gold);
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 8px 24px rgba(255, 184, 0, 0.2);
+}
+
+.package-highlight h3 {
+    font-size: 2rem;
+    color: var(--carnival-blue);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.package-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.price-sgd,
+.price-myr {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--carnival-gold);
+}
+
+.or {
+    font-size: 1.5rem;
+    color: var(--text-gray);
+}
+
+.per-pax {
+    font-size: 1.25rem;
+    color: var(--text-gray);
+}
+
+.package-includes {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.package-includes h4 {
+    font-size: 1.5rem;
+    color: var(--carnival-blue);
+    margin-bottom: 1.5rem;
+}
+
+.package-includes ul {
+    list-style: none;
+}
+
+.package-includes ul li {
+    padding: 0.75rem 0;
+    color: var(--text-gray);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.package-includes ul li:last-child {
+    border-bottom: none;
+}
+
+.package-includes ul li i {
+    color: var(--carnival-gold);
+    font-size: 1.25rem;
+}
+
+.package-note {
+    color: var(--text-gray);
+    font-style: italic;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Sponsorship Section */
+.sponsorship-section {
+    margin-top: 4rem;
+}
+
+.sponsorship-section h3 {
+    font-size: 2rem;
+    color: var(--carnival-blue);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sponsorship-tables {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.sponsor-table {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-table h4 {
+    font-size: 1.5rem;
+    color: var(--carnival-blue);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--carnival-blue) 0%, #0052cc 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.cta-section .subtitle-en {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.5rem;
+}
+
+.cta-description {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.cta-description-en {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.registration-info {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.registration-info h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.website-link {
+    font-size: 1.1rem;
+}
+
+.website-link a {
+    color: var(--carnival-gold);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.website-link a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+/* Payment Methods */
+.payment-methods {
+    margin: 3rem 0;
+}
+
+.payment-methods h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.payment-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    color: var(--text-dark);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.payment-card h4 {
+    font-size: 1.5rem;
+    color: var(--carnival-blue);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.payment-card h4 i {
+    color: var(--carnival-gold);
+}
+
+.payment-card p {
+    color: var(--text-gray);
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.payment-card strong {
+    color: var(--carnival-blue);
+}
+
+/* CTA Buttons */
+.cta-buttons {
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--carnival-gold) 0%, #ff8c00 100%);
+    color: var(--text-dark);
+    box-shadow: 0 4px 15px rgba(255, 184, 0, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 184, 0, 0.6);
+}
+
+.btn-large {
+    padding: 1.25rem 3rem;
+    font-size: 1.25rem;
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(135deg, var(--carnival-gold) 0%, #ff8c00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Hero Image */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Text Utilities */
+.text-center {
+    text-align: center;
+}
+
+.chinese {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .package-highlight {
+        padding: 2rem 1.5rem;
+    }
+
+    .price-sgd,
+    .price-myr {
+        font-size: 2rem;
+    }
+
+    .sponsorship-tables {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+
+    .btn-large {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .package-price {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .price-sgd,
+    .price-myr {
+        font-size: 1.75rem;
+    }
+
+    .or {
+        font-size: 1rem;
+    }
+}
