@@ -153,7 +153,7 @@ section {
 
 .badge-symbols {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
@@ -236,7 +236,7 @@ section {
 .transport-card h5 {
     font-size: 1.25rem;
     color: var(--carnival-blue);
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
