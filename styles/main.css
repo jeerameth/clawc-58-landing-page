@@ -747,3 +747,64 @@ footer {
         flex: 0 0 100%;
     }
 }
+
+/* Mobile Navigation Fixes */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 1rem 0;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        z-index: 49;
+        /* Below nav which is 50 */
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-links.active {
+        display: flex !important;
+        /* Override Tailwind hidden */
+        animation: slideDown 0.3s ease-out;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 1rem;
+        font-size: 1.1rem;
+        color: var(--text-dark);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    /* Adjust the Register button in mobile menu */
+    .nav-links li:last-child {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .nav-links li:last-child a {
+        display: inline-block;
+        border-bottom: none;
+        width: auto;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
