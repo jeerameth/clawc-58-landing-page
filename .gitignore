@@ -1,6 +1,7 @@
 # Ignore slides and resource folders
 slides/
 resources/
+regis_form/
 
 # OS generated files
 .DS_Store
