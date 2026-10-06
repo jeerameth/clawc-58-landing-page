@@ -711,6 +711,25 @@
         </div>
     </footer>
 
+    <div id="closed-modal" role="dialog" aria-modal="true" aria-labelledby="closed-modal-title"
+        style="position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(0,0,0,.55)">
+        <div style="background:#fff;max-width:420px;width:100%;border-radius:16px;padding:28px 24px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.3);border-top:6px solid #FFB800">
+            <h2 id="closed-modal-title" style="color:#003DA5;font-size:1.4rem;font-weight:700;margin:0 0 12px">報名已截止<br>Registration Closed</h2>
+            <p style="color:#333;margin:0 0 6px">感謝您的關注，報名現已截止。</p>
+            <p style="color:#333;margin:0 0 20px">Thank you for your interest, we have closed for registration.</p>
+            <button type="button" id="closed-modal-ok" class="btn btn-primary">好的 OK</button>
+        </div>
+    </div>
+    <script>
+        (function () {
+            var modal = document.getElementById('closed-modal');
+            function close() { modal.style.display = 'none'; }
+            document.getElementById('closed-modal-ok').addEventListener('click', close);
+            modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
+            document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+        })();
+    </script>
+
     <script src="scripts/app.js"></script>
 </body>
 
